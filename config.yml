@@ -1,0 +1,18 @@
+title: hello-world
+description: >-
+  this is me learning how to train and be able to code. Please bare with me as i
+  will get back to you shortly. 
+template:
+  repo: hello-world-template
+  name: hello-world
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
